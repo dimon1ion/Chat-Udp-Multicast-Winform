@@ -17,6 +17,7 @@ namespace Chat_Udp_Multicast_Winform
 
         public static string IsProfanity(this string text, out bool res)
         {
+            text = text.ToLower();
             res = false;
             foreach (string item in profanity)
             {
